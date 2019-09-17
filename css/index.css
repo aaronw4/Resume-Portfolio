@@ -684,6 +684,12 @@ header .header {
   text-align: center;
   padding-bottom: 5px;
 }
+.inner p {
+  padding-bottom: 25px;
+}
+.inner ul {
+  padding-left: 20px;
+}
 .inner li {
   font-size: 1.8rem;
   list-style-type: disc;
