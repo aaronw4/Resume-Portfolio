@@ -634,6 +634,7 @@ header .header {
 .container {
   margin: 0 auto;
   max-width: calc(100% - 4.5rem);
+  margin-bottom: 50px;
 }
 .container h3 {
   text-align: center;
@@ -681,6 +682,12 @@ header .header {
 }
 .inner h4 {
   text-align: center;
+  padding-bottom: 5px;
+}
+.inner li {
+  font-size: 1.8rem;
+  list-style-type: disc;
+  line-height: 1.2;
 }
 .features article .inner > :last-child {
   margin-bottom: 0;
