@@ -698,6 +698,11 @@ header .header {
 .features article .inner > :last-child {
   margin-bottom: 0;
 }
+.footnote{
+  font-size: 2rem;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
 footer {
   text-align: center;
 }
