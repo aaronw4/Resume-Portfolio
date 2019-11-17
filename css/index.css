@@ -161,6 +161,7 @@ h7 {
 .homePage {
   margin: 0;
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -100%);
@@ -182,6 +183,17 @@ h7 {
   text-decoration: none;
   padding: 10px;
   color: #3f72af;
+}
+@media (max-width: 500px) {
+  .homePage h1 {
+    font-size: 4rem;
+  }
+  .homePage h4 {
+    font-size: 3rem;
+  }
+  .homeLink {
+    font-size: 2rem;
+  }
 }
 .topNav {
   position: sticky;
@@ -374,7 +386,6 @@ header .header {
     font-size: 1.8rem;
   }
 }
-}
 .education p {
   text-align: center;
   font-weight: bold;
@@ -465,6 +476,19 @@ header .header {
 .features article:last-child {
   border-top: 0;
   padding-top: 0;
+}
+@media (max-width: 500px) {
+  .features article {
+    display: block;
+    text-align: center;
+  }
+  .inner h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .inner ul, .inner p {
+    text-align: left;
+  }
 }
 .image {
   flex-basis: 50%;
