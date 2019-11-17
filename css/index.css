@@ -158,6 +158,31 @@ h6 {
 h7 {
   font-size: 2rem;
 }
+.homePage {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  color: #112d4e;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
+}
+.homePage h1 {
+  margin-bottom: 10px;
+}
+.homePage h4 {
+  margin-bottom: 10px;
+}
+.homeNav {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.homeLink {
+  text-decoration: none;
+  padding: 10px;
+  color: #3f72af;
+}
 .topNav {
   position: sticky;
   top: 0;
