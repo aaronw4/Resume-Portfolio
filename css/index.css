@@ -300,10 +300,10 @@ header .header {
   }
 }
 .skills {
-  padding: 30px;
   border-top: 2px solid #dbe2ef;
   width: 80%;
-  margin: 20px auto;
+  margin: 50px auto;
+  padding-top: 50px;
 }
 .skills p {
   font-size: 3rem;
@@ -314,7 +314,7 @@ header .header {
 .skills .list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   white-space: nowrap;
 }
 .skills .list .skill {
@@ -332,8 +332,18 @@ header .header {
     font-size: 1.8rem;
   }
 }
-.skills i {
+.skills i, .skills span {
   color: #3f72af;
+  font-size: 2.2rem;
+}
+.list {
+  margin-top: 25px;
+}
+.skill {
+  margin-bottom: 50px;
+}
+.skill ul {
+  width: 450px;
 }
 .education {
   padding: 3rem;
