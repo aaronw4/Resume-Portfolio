@@ -1,6 +1,9 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+
+   Enter into terminal:
+   less-watch-compiler less css index.less
 */
 html,
 body,
@@ -332,7 +335,8 @@ header .header {
     font-size: 1.8rem;
   }
 }
-.skills i, .skills span {
+.skills i,
+.skills span {
   color: #3f72af;
   font-size: 2.2rem;
 }
@@ -430,7 +434,7 @@ header .header {
   font-size: 15px;
 }
 .portIntro p a {
-  color: #4D6A8D;
+  color: #3f72af;
 }
 .container {
   margin: 0 auto;
@@ -468,22 +472,15 @@ header .header {
   margin-bottom: 25px;
   padding-top: 25px;
 }
-.features article:last-child {
-  border-top: 0;
-  padding-top: 0;
-}
 @media (max-width: 500px) {
   .features article {
     display: block;
     text-align: center;
   }
-  .inner h4 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  .inner ul, .inner p {
-    text-align: left;
-  }
+}
+.features article:last-child {
+  border-top: 0;
+  padding-top: 0;
 }
 .image {
   flex-basis: 50%;
@@ -498,11 +495,23 @@ header .header {
   text-align: center;
   padding-bottom: 5px;
 }
+@media (max-width: 500px) {
+  .inner h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
 .inner p {
   padding-bottom: 25px;
 }
 .inner ul {
   padding-left: 20px;
+}
+@media (max-width: 500px) {
+  .inner ul,
+  .inner p {
+    text-align: left;
+  }
 }
 .inner li {
   font-size: 1.8rem;
@@ -512,7 +521,7 @@ header .header {
 .features article .inner > :last-child {
   margin-bottom: 0;
 }
-.footnote{
+.footnote {
   font-size: 2rem;
   margin-left: 50px;
   margin-bottom: 50px;
@@ -589,4 +598,19 @@ a:hover {
 }
 .contact i {
   color: #3f72af;
+}
+.linkIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.linkIcons a {
+  font-size: 4rem;
+  text-decoration: none;
+  color: #3f72af;
+}
+@media (max-width: 500px) {
+  .linkIcons a {
+    font-size: 2rem;
+  }
 }
