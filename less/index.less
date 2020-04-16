@@ -27,7 +27,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -52,15 +54,20 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
+
+/* ----- Set color variables ----- */
 
 @color1: #f9f7f7;
 @color2: #dbe2ef;
 @color3: #3f72af;
 @color4: #112d4e;
 @border: 1px solid black;
+
+/* Font's and background for website */
 
 html, body {
 	height: 100%;
@@ -96,6 +103,8 @@ h6 {
 h7 {
 	font-size: 2rem;
 }
+
+/* -----Index CSS below this mark----- */
 
 .homePage {
 	margin: 0;
@@ -134,10 +143,13 @@ h7 {
 	  font-size: 2rem;
 	}
   }
+
+/* Navigation CSS for all pages except Index */
+
 .topNav {
 	position: sticky;
   	top: 0;		
-	background-color: @color4;
+	background-color: @color1;
 	font-size: 2.5rem;
 	display: flex;
 	justify-content: flex-end;
@@ -146,7 +158,7 @@ h7 {
 	.link{
 		text-decoration: none;
 		padding: 5px 10px;
-		color: @color1;		
+		color: @color4;		
 		border-left: 3px solid @color1;
 
 		@media (max-width:500px) {
@@ -155,9 +167,9 @@ h7 {
 	}
 
 	.active {
-		background-color: @color1;
-		color: @color4;
+		border-bottom: @color4 3px solid;
 	  }
+	
 	
 	a:hover {
 		font-weight: bold;
@@ -168,6 +180,8 @@ h7 {
 		font-size: 2rem;
 	}
 }
+
+/* 	----- About CSS below this mark -----	 */
 
 header{
 	display: flex;
@@ -218,13 +232,12 @@ header{
 
 .intro {
 	padding: 50px;
-	font-size: 3.5rem;
+	font-size: 2.9rem;
 	margin: 10px auto;
-	width: 80%;
+	width: 65%;
 	b {
 		font-weight: bold;
-		font-family: 'Lobster', cursive;
-		font-size: 4rem;
+		font-size: 3rem;
 
 		@media (max-width: 900px) {
 			font-size: 3.25rem;	
@@ -246,9 +259,9 @@ header{
 
 .skills {
 	border-top: 2px solid #dbe2ef;
-  width: 80%;
-  margin: 50px auto;
-  padding-top: 50px;
+	width: 80%;
+	margin: 50px auto;
+	padding-top: 50px;
 	
 	p {
 		font-size: 3rem;
@@ -299,13 +312,10 @@ header{
   }
 
 .education {
-	padding: 3rem;
-  border: 1px solid black;
-  border-radius: 5rem;
-  background-color: #dbe2ef;
-  flex-basis: 48%;
-	font-size: 2rem;
-	padding-left: 2rem;
+	border-top: 2px solid #dbe2ef;
+	width: 80%;
+	margin: 50px auto;
+	padding-top: 50px;
 
 	p {
 		font-size: 3rem;
@@ -342,6 +352,7 @@ header{
 		text-decoration: underline;
 	  }
 	.eduCont {
+		font-size: 2rem;
 
 		.bear {
 			width: 30px;
@@ -366,11 +377,15 @@ header{
 }
 
 .work{
-	padding: 5rem;
+	border-top: 2px solid #dbe2ef;
+	width: 80%;
+	margin: 50px auto;
+	padding-top: 50px;
 
 	h5{
 		font-weight: bold;
 		text-decoration: underline;
+		text-align: center;
 	}
 
 	h7{
@@ -382,24 +397,8 @@ header{
 		padding-top: 1rem;
 	}
 }
-	
-.portIntro {
-	text-align: center;
 
-	h6 {
-		padding-top: 50px;
-	}
-
-	p {
-		padding-top: 20px;
-		font-size: 15px;
-
-		a {
-			color: @color3;
-		}
-	}
-
-}
+/* ----- Portfolio CSS is below this mark ----- */
 
 .container {
 	margin: 0 auto;
@@ -506,23 +505,7 @@ header{
 	margin-bottom: 50px;
   }
 
-footer {
-	text-align: center;
-}
-
-footer a{
-	display: inline-block;
-	text-decoration: none;
-	margin: 1rem;
-	padding-left:1rem;
-	padding-bottom: 4rem;
-	font-size: 1.8rem;
-	color: @color3;
-}
-
-a:hover {
-	font-weight: bold;
-}
+/* ----- Contact CSS is below this mark ----- */
 
 .contact {
 	text-align: center;
@@ -592,4 +575,23 @@ a:hover {
 			font-size: 2rem;
 		}
 	}
+}
+
+/* Footer CSS */
+footer {
+	text-align: center;
+}
+
+footer a{
+	display: inline-block;
+	text-decoration: none;
+	margin: 1rem;
+	padding-left:1rem;
+	padding-bottom: 4rem;
+	font-size: 1.8rem;
+	color: @color3;
+}
+
+a:hover {
+	font-weight: bold;
 }

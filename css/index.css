@@ -133,6 +133,8 @@ table {
 * {
   box-sizing: border-box;
 }
+/* ----- Set color variables ----- */
+/* Font's and background for website */
 html,
 body {
   height: 100%;
@@ -161,6 +163,7 @@ h6 {
 h7 {
   font-size: 2rem;
 }
+/* -----Index CSS below this mark----- */
 .homePage {
   margin: 0;
   position: absolute;
@@ -198,10 +201,11 @@ h7 {
     font-size: 2rem;
   }
 }
+/* Navigation CSS for all pages except Index */
 .topNav {
   position: sticky;
   top: 0;
-  background-color: #112d4e;
+  background-color: #f9f7f7;
   font-size: 2.5rem;
   display: flex;
   justify-content: flex-end;
@@ -210,7 +214,7 @@ h7 {
 .topNav .link {
   text-decoration: none;
   padding: 5px 10px;
-  color: #f9f7f7;
+  color: #112d4e;
   border-left: 3px solid #f9f7f7;
 }
 @media (max-width: 500px) {
@@ -219,8 +223,7 @@ h7 {
   }
 }
 .topNav .active {
-  background-color: #f9f7f7;
-  color: #112d4e;
+  border-bottom: #112d4e 3px solid;
 }
 .topNav a:hover {
   font-weight: bold;
@@ -231,6 +234,7 @@ h7 {
     font-size: 2rem;
   }
 }
+/* 	----- About CSS below this mark -----	 */
 header {
   display: flex;
   width: 80%;
@@ -271,14 +275,13 @@ header .header {
 }
 .intro {
   padding: 50px;
-  font-size: 3.5rem;
+  font-size: 2.9rem;
   margin: 10px auto;
-  width: 80%;
+  width: 65%;
 }
 .intro b {
   font-weight: bold;
-  font-family: 'Lobster', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 @media (max-width: 900px) {
   .intro b {
@@ -350,13 +353,10 @@ header .header {
   width: 450px;
 }
 .education {
-  padding: 3rem;
-  border: 1px solid black;
-  border-radius: 5rem;
-  background-color: #dbe2ef;
-  flex-basis: 48%;
-  font-size: 2rem;
-  padding-left: 2rem;
+  border-top: 2px solid #dbe2ef;
+  width: 80%;
+  margin: 50px auto;
+  padding-top: 50px;
 }
 .education p {
   font-size: 3rem;
@@ -390,6 +390,9 @@ header .header {
   font-weight: bold;
   text-decoration: underline;
 }
+.education .eduCont {
+  font-size: 2rem;
+}
 .education .eduCont .bear {
   width: 30px;
   height: auto;
@@ -410,11 +413,15 @@ header .header {
   }
 }
 .work {
-  padding: 5rem;
+  border-top: 2px solid #dbe2ef;
+  width: 80%;
+  margin: 50px auto;
+  padding-top: 50px;
 }
 .work h5 {
   font-weight: bold;
   text-decoration: underline;
+  text-align: center;
 }
 .work h7 {
   font-style: italic;
@@ -423,19 +430,7 @@ header .header {
   font-size: 1.7rem;
   padding-top: 1rem;
 }
-.portIntro {
-  text-align: center;
-}
-.portIntro h6 {
-  padding-top: 50px;
-}
-.portIntro p {
-  padding-top: 20px;
-  font-size: 15px;
-}
-.portIntro p a {
-  color: #3f72af;
-}
+/* ----- Portfolio CSS is below this mark ----- */
 .container {
   margin: 0 auto;
   max-width: calc(100% - 4.5rem);
@@ -526,21 +521,7 @@ header .header {
   margin-left: 50px;
   margin-bottom: 50px;
 }
-footer {
-  text-align: center;
-}
-footer a {
-  display: inline-block;
-  text-decoration: none;
-  margin: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 4rem;
-  font-size: 1.8rem;
-  color: #3f72af;
-}
-a:hover {
-  font-weight: bold;
-}
+/* ----- Contact CSS is below this mark ----- */
 .contact {
   text-align: center;
 }
@@ -613,4 +594,20 @@ a:hover {
   .linkIcons a {
     font-size: 2rem;
   }
+}
+/* Footer CSS */
+footer {
+  text-align: center;
+}
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  font-size: 1.8rem;
+  color: #3f72af;
+}
+a:hover {
+  font-weight: bold;
 }
