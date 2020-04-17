@@ -513,6 +513,14 @@ header .header {
   list-style-type: disc;
   line-height: 1.2;
 }
+.repo {
+  font-size: 1.8rem;
+  margin-top: 50px;
+}
+.repo a {
+  text-decoration: none;
+  margin: 20px;
+}
 .features article .inner > :last-child {
   margin-bottom: 0;
 }
