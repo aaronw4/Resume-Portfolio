@@ -237,14 +237,10 @@ h7 {
 /* 	----- About CSS below this mark -----	 */
 header {
   display: flex;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #f9f7f7;
+  width: 65%;
+  margin: auto;
   margin-top: 50px;
+  padding: 50px 0px 20px 50px;
   align-items: center;
 }
 header img {
@@ -252,6 +248,7 @@ header img {
 }
 header .header {
   text-align: center;
+  padding-left: 50px;
 }
 @media (max-width: 900px) {
   header .me {
@@ -274,7 +271,7 @@ header .header {
   }
 }
 .intro {
-  padding: 50px;
+  padding: 100px 0px;
   font-size: 2.9rem;
   margin: 10px auto;
   width: 65%;
@@ -306,25 +303,29 @@ header .header {
   }
 }
 .skills {
-  border-top: 2px solid #dbe2ef;
-  width: 80%;
+  background-color: #dbe2ef;
+  width: 100%;
   margin: 50px auto;
-  padding-top: 50px;
+  padding: 100px 0px;
 }
 .skills p {
   font-size: 3rem;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
+  padding-bottom: 50px;
 }
 .skills .list {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-around;
   white-space: nowrap;
 }
-.skills .list .skill {
-  flex-basis: 32%;
+.skills .list .skill ul {
+  width: 450px;
+  margin-bottom: 50px;
 }
 @media (max-width: 900px) {
   .skills .list .skill {
@@ -344,19 +345,20 @@ header .header {
   font-size: 2.2rem;
 }
 .websites {
-  border-top: 2px solid #dbe2ef;
-  width: 80%;
+  width: 100%;
   margin: 50px auto;
-  padding: 50px;
 }
 .websites p {
   font-size: 3rem;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
-}
-.websites ul {
   padding-top: 50px;
+}
+.websites .webLists {
+  padding: 50px 0px 100px 0px;
+  width: 65%;
+  margin: 0 auto;
 }
 .websites li {
   font-size: 2rem;
@@ -365,20 +367,11 @@ header .header {
   width: 15px;
   height: auto;
 }
-.list {
-  margin-top: 25px;
-}
-.skill {
-  margin-bottom: 50px;
-}
-.skill ul {
-  width: 450px;
-}
 .education {
-  border-top: 2px solid #dbe2ef;
-  width: 80%;
+  width: 100%;
+  background-color: #dbe2ef;
   margin: 50px auto;
-  padding: 50px;
+  padding: 100px 0px;
 }
 .education p {
   font-size: 3rem;
@@ -389,6 +382,8 @@ header .header {
 }
 .education .eduCont {
   font-size: 2rem;
+  width: 65%;
+  margin: 0 auto;
 }
 .education .eduCont .bear {
   width: 30px;
@@ -410,10 +405,9 @@ header .header {
   }
 }
 .work {
-  border-top: 2px solid #dbe2ef;
   width: 80%;
   margin: 50px auto;
-  padding-top: 50px;
+  padding: 50px 0px 100px 0px;
 }
 .work h5 {
   font-weight: bold;
@@ -608,6 +602,7 @@ header .header {
 /* Footer CSS */
 footer {
   text-align: center;
+  margin-bottom: 25px;
 }
 footer a {
   display: inline-block;
