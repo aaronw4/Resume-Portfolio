@@ -439,7 +439,7 @@ header .header {
 }
 .container p {
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   padding-bottom: 50px;
 }
 @media (max-width: 1024px) {
@@ -451,6 +451,9 @@ header .header {
   .container {
     max-width: calc(100% - 3.375rem);
   }
+}
+#portSubheader {
+  text-align: center;
 }
 .features {
   display: flex;
