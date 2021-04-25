@@ -1,35 +1,65 @@
-<article>
-    <a href="https://practical-kilby-3f79e1.netlify.app/" class="image" target='_blank'><img src="images/pic16.jpg" alt="" /></a>
-    <div class="inner">
-      <h4>Immunization Tracker</h4>
-      <p> 
-        This was my second group project and my first time using React to design components of a much bigger app. 
-        My focus was on the doctor homepage. My task was to pull in patient data and displayed a list of patients on the doctor's dashboard. 
-        The page has a search bar where the doctor can search for patients by name to find them more easily. 
-        Also, the doctor has the ability to click on a patient's 'Records' button to get more information on that patient. 
-        After clicking on the 'Records' button, the doctor is taken to the Single Patient page. 
-        Here all of the patient's immunization information is listed for the doctor. 
-        Also, a button was added that take the doctor to a form that allows them to add a medical record to the database.
-        A separate component was created which is an indicator button that changes color depending on whether a patient is due a shot or not.
-        <br/>
-        <br/>
-        On our <a href="JavaScript:newPopup('images/Trello-immunization.jpg');">Trello Board</a>, you can see that I also 
-        did work on the introduction page and the footer.
-        <br/>
-        <br/>
-        To login in as a doctor, the email address is provider1@test.com and the password is 1234.
-        <br/>
-        <br/>
-        This project demonstrates:
-      </p>
-      <ul>
-        <li>The use of Styled-Components</li>
-        <li>Creating React components that integrate into a larger app</li>
-        <li>Filtering through data to conduct a search</li>
-        <li>Mapping through data and presenting it to the user</li>
-      </ul> 
-      <div class="repo">
-        <a href="https://github.com/aaronw4/Front-End" target="_blank"> Frontend Repo</a>   
-      </div>      
-    </div>
-  </article>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>My Resume</title>
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="topNav">
+            <a href="index.html" class="link">Home</a>
+            <a href="about.html" class="link">About</a>
+            <a href="portfolio.html" class="link active">Portfolio</a>
+            <a href="contact.html" class="link">Contact</a>
+        </nav>
+        <div class="features container single">
+            <article>
+                <a href="https://practical-kilby-3f79e1.netlify.app/" class="image" target='_blank'><img src="images/pic16.jpg" alt="" /></a>
+                <div class="inner">
+                    <h4>Immunization Tracker</h4>
+                    <p> 
+                        This was my second group project and my first time using React to design components of a much bigger app. 
+                        My focus was on the doctor homepage. My task was to pull in patient data and displayed a list of patients on the doctor's dashboard. 
+                        The page has a search bar where the doctor can search for patients by name to find them more easily. 
+                        Also, the doctor has the ability to click on a patient's 'Records' button to get more information on that patient. 
+                        After clicking on the 'Records' button, the doctor is taken to the Single Patient page. 
+                        Here all of the patient's immunization information is listed for the doctor. 
+                        Also, a button was added that take the doctor to a form that allows them to add a medical record to the database.
+                        A separate component was created which is an indicator button that changes color depending on whether a patient is due a shot or not.
+                        <br/>
+                        <br/>
+                        On our <a href="JavaScript:newPopup('images/Trello-immunization.jpg');">Trello Board</a>, you can see that I also 
+                        did work on the introduction page and the footer.
+                        <br/>
+                        <br/>
+                        To login in as a doctor, the email address is provider1@test.com and the password is 1234.
+                        <br/>
+                        <br/>
+                        This project demonstrates:
+                    </p>
+                    <ul>
+                        <li>The use of Styled-Components</li>
+                        <li>Creating React components that integrate into a larger app</li>
+                        <li>Filtering through data to conduct a search</li>
+                        <li>Mapping through data and presenting it to the user</li>
+                    </ul> 
+                    <div class="repo">
+                        <a href="https://github.com/aaronw4/Front-End" target="_blank"> Frontend Repo</a>   
+                    </div>      
+                </div>
+            </article>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function newPopup(url) {
+            popupWindow = window.open(
+            url,
+            'popUpWindow',
+            'height=675, width=1200, left=10, top=10, resizable=yes, scrollbars=yes, toolbar=yes, menubar=no, location=no, directories=no, status=yes')
+        }
+    </script>
+</html>
