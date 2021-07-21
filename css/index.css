@@ -236,7 +236,7 @@ h7 {
 }
 /* 	----- About CSS below this mark -----	 */
 header {
-  display: flex;
+  /* display: flex; */
   width: 65%;
   margin: auto;
   margin-top: 50px;
@@ -270,11 +270,14 @@ header .header {
     font-size: 2rem;
   }
 }
+.aboutCont {
+  display: flex;
+  padding: 50px 50px;
+}
 .intro {
-  padding: 100px 0px;
   font-size: 2.9rem;
   margin: 10px auto;
-  width: 65%;
+  width: 40%;
 }
 .intro b {
   font-weight: bold;
@@ -302,11 +305,62 @@ header .header {
     margin-top: 20px;
   }
 }
-.skills {
+.tabCont {
+  width: 50%;
+  margin: 0 auto 50px auto;
+}
+input { 
+  display: none; 
+}
+input + label { 
+  display: inline-block 
+}
+input ~ .tab { 
+  display: none 
+}
+#tab1:checked ~ .tab.content1{ 
+  display: block; 
+}
+#tab2:checked ~ .tab.content2,
+#tab3:checked ~ .tab.content3 {
+  display: flex;
+  flex-direction: column;
+}
+#tab2:checked ~ .tab.content2 ul,
+#tab3:checked ~ .tab.content3 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#tab2:checked ~ .tab.content2 li,
+#tab3:checked ~ .tab.content3 li {
+  width: 20%;
+}
+input + label {
+  border: 1px solid #999;
+  background: #eee;
+  padding: 4px 12px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  top: 1px;
+  font-size: 2.2rem;
+}
+input:checked + label {
+  background:  #dbe2ef;
+  border-bottom: 1px solid transparent;
+}
+.tab {
+  border: 1px solid #999;
   background-color: #dbe2ef;
   width: 100%;
-  margin: 50px auto;
-  padding: 100px 0px;
+  padding: 50px; 
+  font-size: 2.2rem;
+}
+.subtitle {
+  text-decoration: underline;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 .skills p {
   font-size: 3rem;
