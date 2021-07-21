@@ -606,10 +606,9 @@ input:checked + label {
 }
 .contactCont h6 {
   width: 30%;
-  text-align: center;
 }
 @media (max-width: 500px) {
-  .contactCont h6 {
+  .contactCont {
     font-size: 2rem;
   }
 }
@@ -623,34 +622,22 @@ input:checked + label {
 .linkIcons a {
   text-decoration: none;
 }
-@media (max-width: 710px) {
-  .linkIcons {
-    padding-left: 15%;
+@media (max-width: 770px) {
+  .contactCont {
+    display: block;
+    margin: 50px auto;
   }
-}
-@media (max-width: 620px) {
-  .linkIcons {
-    padding-left: 12%;
+  .contactCont h6, .linkIcons {
+    width: 100%;
+    margin-bottom: 75px;
   }
-}
-@media (max-width: 560px) {
   .linkIcons {
-    padding-left: 10%;
-  }
-}
-@media (max-width: 400px) {
-  .linkIcons {
-    padding-left: 1%;
+    margin-left: 10%;
   }
 }
 @media (max-width: 500px) {
-  .linkIcons li {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 500px) {
-  .linkIcons a {
-    font-size: 2rem;
+  .linkIcons{
+    margin: 0;
   }
 }
 /* Footer CSS */
