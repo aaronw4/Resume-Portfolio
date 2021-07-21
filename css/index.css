@@ -239,8 +239,7 @@ header {
   /* display: flex; */
   width: 65%;
   margin: auto;
-  margin-top: 50px;
-  padding: 50px 0px 20px 50px;
+  margin-top: 75px;
   align-items: center;
 }
 header img {
@@ -248,12 +247,10 @@ header img {
 }
 header .header {
   text-align: center;
-  padding-left: 50px;
 }
 @media (max-width: 900px) {
   header .me {
     width: 30%;
-    padding-left: 10px;
   }
   header h1 {
     font-size: 5rem;
@@ -284,6 +281,9 @@ header .header {
   font-size: 3rem;
 }
 @media (max-width: 900px) {
+  .intro {
+    font-size: 3.25rem;
+  }
   .intro b {
     font-size: 3.25rem;
   }
@@ -291,15 +291,7 @@ header .header {
 @media (max-width: 500px) {
   .intro b {
     font-size: 2.5rem;
-    margin-top: 20px;
   }
-}
-@media (max-width: 900px) {
-  .intro {
-    font-size: 3.25rem;
-  }
-}
-@media (max-width: 500px) {
   .intro {
     font-size: 2.5rem;
     margin-top: 20px;
@@ -308,6 +300,20 @@ header .header {
 .tabCont {
   width: 50%;
   margin: 0 auto 50px auto;
+}
+@media (max-width: 1024px) {
+  .aboutCont {
+    display: block;
+  }
+  .intro, .tabCont {
+    width: 100%;
+    margin: 50px auto 100px auto;
+  }
+}
+@media (max-width: 500px) {
+  .intro, .tabCont {
+    margin: 25px auto 50px auto;
+  }
 }
 input { 
   display: none; 
@@ -346,6 +352,19 @@ input + label {
   top: 1px;
   font-size: 2.2rem;
 }
+@media (max-width: 500px) {
+  input + label {
+    font-size: 1rem;
+  }
+  #tab2:checked ~ .tab.content2 ul,
+  #tab3:checked ~ .tab.content3 ul {
+    flex-direction: column;
+  }
+  #tab2:checked ~ .tab.content2 li,
+  #tab3:checked ~ .tab.content3 li {
+    width: 100%;
+  }
+}
 input:checked + label {
   background:  #dbe2ef;
   border-bottom: 1px solid transparent;
@@ -357,11 +376,17 @@ input:checked + label {
   padding: 50px; 
   font-size: 2.2rem;
 }
+@media (max-width: 500px) {
+  .tab {
+    padding: 25px;
+  }
+}
 .subtitle {
   text-decoration: underline;
   font-weight: bold;
   padding-bottom: 5px;
 }
+/*
 .skills p {
   font-size: 3rem;
   text-align: center;
@@ -479,7 +504,7 @@ input:checked + label {
 .work p {
   font-size: 1.7rem;
   padding: 10px 50px;
-}
+} */
 /* ----- Portfolio CSS is below this mark ----- */
 .container {
   margin: 0 auto;
