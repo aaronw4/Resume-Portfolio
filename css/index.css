@@ -272,6 +272,7 @@ header .header {
   padding: 50px 50px;
 }
 .intro {
+  position: relative;
   font-size: 2.9rem;
   margin: 10px auto;
   width: 40%;
@@ -280,6 +281,10 @@ header .header {
   font-weight: bold;
   font-size: 3rem;
 }
+.certification {
+  position: absolute;
+  right: 0;
+}
 @media (max-width: 900px) {
   .intro {
     font-size: 3.25rem;
@@ -287,14 +292,24 @@ header .header {
   .intro b {
     font-size: 3.25rem;
   }
+
 }
 @media (max-width: 500px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
   .intro b {
     font-size: 2.5rem;
   }
-  .intro {
-    font-size: 2.5rem;
-    margin-top: 20px;
+  .intro a {
+    margin: 10px;
+  }
+  .certification {
+    position: static;
   }
 }
 .tabCont {
