@@ -594,6 +594,9 @@ input:checked + label {
 .image img {
   width: 90%;
 }
+#hpImage {
+  border: black solid 1px;
+}
 .inner {
   flex-basis: 50%;
 }
