@@ -539,7 +539,16 @@ input:checked + label {
 .container p {
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+.buttonCont {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.buttonCont button {
+  margin: 10px;
+  font-size: 2rem;
 }
 @media (max-width: 1024px) {
   .container {
