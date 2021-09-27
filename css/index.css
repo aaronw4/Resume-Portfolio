@@ -539,6 +539,11 @@ input:checked + label {
 .container p {
   font-size: 2rem;
   text-align: center;
+}
+#portSubheader {
+  width: 70%;
+  margin: auto;
+  text-align: center;
   padding-bottom: 20px;
 }
 .buttonCont {
