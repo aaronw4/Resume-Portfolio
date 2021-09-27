@@ -4,16 +4,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>My Resume</title>
-
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
+<script>
+$('.buttonCont').ready(function() {
+  $('#All').click(function() {
+    $('.Lambda').show();
+    $('.Personal').show();
+    $('.Team').show();
+  });
+  $('#Lambda').click(function() {
+    $('.Personal').hide();
+    $('.Team').hide();
+    $('.Lambda').show();
+  });
+  $('#Personal').click(function() {
+    $('.Lambda').hide();
+    $('.Team').hide();
+    $('.Personal').show();
+  });
+  $('#Team').click(function() {
+    $('.Lambda').hide();
+    $('.Personal').hide();
+    $('.Team').show();
+  });
+})
+</script>
 <body>
   <nav class="topNav">
     <a href="index.html" class="link">Home</a>
@@ -26,8 +48,14 @@
     <div class="container">
       <h3>A Few Projects</h3>
       <p id='portSubheader'>Below are some projects that I have completed during my time at Lambda.</p>
+      <div class="buttonCont">
+        <button id='All'>All Projects</button>
+        <button id='Lambda'>Lambda Projects</button>
+        <button id='Personal'>Personal Projects</button>
+        <button id='Team'>Team Projects</button>
+      </div>
       <div class="features">
-        <article>
+        <article class="Lambda">
           <a href="https://aaronw4.github.io/responsive-web-design-I/" class="image" target='_blank'><img src="images/pic01.png" alt="" /></a>
           <div class="inner">
             <h4>Responsive Design Web Page</h4>
@@ -47,7 +75,7 @@
             </div> 
           </div>
         </article>
-        <article>
+        <article class="Lambda">
           <a href="https://aaronw4.github.io/WebUI/" class="image" target='_blank'><img src="images/pic02.png" alt="" /></a>
           <div class="inner">
             <h4>Team Built Landing Page</h4>
@@ -67,7 +95,7 @@
             </div> 
           </div>
         </article>
-        <article>
+        <article class="Lambda">
           <a href="https://github.com/aaronw4/Sprint-Challenge--JavaScript/tree/Aaron-Williams/challenges" class="image" target='_blank'><img src="images/pic03.png" alt="" /></a>
           <div class="inner">
             <h4>JavaScript Fundamentals</h4>
@@ -83,7 +111,7 @@
             </ul>             
           </div>
         </article>
-        <article>
+        <article class="Lambda">
           <a href="https://aaronw4.github.io/Newsfeed-Components/" class="image" target='_blank'><img src="images/pic04.png" alt="" /></a>
           <div class="inner">
             <h4>DOM, Components, and Event Listeners</h4>
@@ -102,7 +130,7 @@
             </div>              
           </div>
         </article>
-        <article>
+        <article class="Lambda">
           <a href="https://aaronw4.github.io/Sprint-Challenge-Applied-Javascript/" class="image" target='_blank'><img src="images/pic05.png" alt="" /></a>
           <div class="inner">
             <h4>Using Promises and Creating Components</h4>
@@ -122,7 +150,7 @@
             </div>                
           </div>
         </article> 
-        <article>
+        <article class="Lambda">
           <a href="https://sharp-keller-67dc92.netlify.app/" class="image" target='_blank'><img src="images/pic07.jpg" alt="" /></a>
           <div class="inner">
             <h4>React-UI-Components: Lambda Calculator</h4>
@@ -144,27 +172,27 @@
             </div>            
           </div>
         </article>
-        <article>
-            <a href="https://aaronw4.github.io/react-american-football-scoreboard/" class="image" target='_blank'><img src="images/pic20.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>React: American Football Scoreboard</h4>
-              <p> 
-                In this react App, I created states of data by using the useState hook. 
-                The team name, team scores, and seconds are the state values. 
-                Buttons were added that allow you to change the state of each of these values. 
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>Saving state using useState</li>
-                <li>Buttons with onClick even handlers that change the state</li>
-                <li>Having clock tick down by using setInterval</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/react-american-football-scoreboard" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
-        <article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/react-american-football-scoreboard/" class="image" target='_blank'><img src="images/pic20.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>React: American Football Scoreboard</h4>
+            <p> 
+              In this react App, I created states of data by using the useState hook. 
+              The team name, team scores, and seconds are the state values. 
+              Buttons were added that allow you to change the state of each of these values. 
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Saving state using useState</li>
+              <li>Buttons with onClick even handlers that change the state</li>
+              <li>Having clock tick down by using setInterval</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/react-american-football-scoreboard" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
           <a href="https://aaronw4.github.io/nasa-photo-of-the-day/" class="image" target='_blank'><img src="images/pic06.jpg" alt="" /></a>
           <div class="inner">
             <h4>React: Component Side Effects</h4>
@@ -182,34 +210,34 @@
             </div>            
           </div>
         </article>
-        <article>
-            <a href="https://aaronw4.github.io/Sprint-Challenge-React-Wars/" class="image" target='_blank'><img src="images/pic21.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>React: Star Wars</h4>
-              <p> 
-                This React App makes an API call to retrieve Star Wars data. 
-                This data is then passed down to smaller components that render different parts of the page. 
-                Character data is displayed in cards on the page. 
-                Some of the data displayed (like home planet) requires additional API calls to retrieve. 
-                Separate components are designed to collect this additional data. 
-                Buttons were also created to change which page of the character list that you are looking at.
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>Using the useEffect hook to make an API call using Axios</li>
-                <li>Passing down data to child components as props</li>
-                <li>Using special child components to handle specific tasks</li>
-                <li>Mapping through data to present different characters</li>
-                <li>The use of conditinal statements in rendering HTML text</li>
-                <li>Styled-Components</li>
-                <li>*Buttons to retrieve new data to present a different page of characters</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/Sprint-Challenge-React-Wars" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
-        <article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/Sprint-Challenge-React-Wars/" class="image" target='_blank'><img src="images/pic21.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>React: Star Wars</h4>
+            <p> 
+              This React App makes an API call to retrieve Star Wars data. 
+              This data is then passed down to smaller components that render different parts of the page. 
+              Character data is displayed in cards on the page. 
+              Some of the data displayed (like home planet) requires additional API calls to retrieve. 
+              Separate components are designed to collect this additional data. 
+              Buttons were also created to change which page of the character list that you are looking at.
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Using the useEffect hook to make an API call using Axios</li>
+              <li>Passing down data to child components as props</li>
+              <li>Using special child components to handle specific tasks</li>
+              <li>Mapping through data to present different characters</li>
+              <li>The use of conditinal statements in rendering HTML text</li>
+              <li>Styled-Components</li>
+              <li>*Buttons to retrieve new data to present a different page of characters</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/Sprint-Challenge-React-Wars" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
           <a href="https://jovial-clarke-6b48a4.netlify.app/" class="image" target='_blank'><img src="images/pic08.jpg" alt="" /></a>
           <div class="inner">
             <h4>*React Router Apple Nav</h4>
@@ -227,50 +255,50 @@
             </div>      
           </div>
         </article>
-        <article>
-            <a href="https://aaronw4.github.io/team-builder/" class="image" target='_blank'><img src="images/pic22.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>Forms: Team Builder</h4>
-              <p> 
-                The team builder App had me creating forms to collect and save new data to state. 
-                I used HTML form, input, and submit to create the forms. 
-                I then wrote functions that would save values to state when the event was triggered. 
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>Using the useState hook to create and save values to state</li>
-                <li>Using HTML form, inputs, and submit to create forms</li>
-                <li>Creating functions that updated the state with the form values</li>
-                <li>*Creating an edit form that changes the values of an existing state</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/team-builder" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
-          <article>
-              <a href="https://aaronw4.github.io/User-Onboarding/" class="image" target='_blank'><img src="images/pic23.jpg" alt="" /></a>
-              <div class="inner">
-                <h4>Formik: User Onboarding</h4>
-                <p> 
-                  This user on-boarding App uses a React form library called Formik. 
-                  I created a form with several input fields. I also added error messages incase a form was submitted with missing values. 
-                  When the submit button is clicked, an API post request sends out the data and receives a response. 
-                  After a response is received, the name of the user is added to the page to indicate that their information is now saved.
-                  This project demonstrates:
-                </p>
-                <ul>
-                  <li>The use of the Formik library</li>
-                  <li>Sending data to an API via a post request</li>
-                  <li>Using setStatus in Formik to return API response data to the component</li>
-                  <li>Using useEffect to update the state when the Status changes</li>
-                </ul> 
-                <div class="repo">
-                  <a href="https://github.com/aaronw4/User-Onboarding" target="_blank"> Frontend Repo</a>   
-                </div>      
-              </div>
-            </article>
-        <article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/team-builder/" class="image" target='_blank'><img src="images/pic22.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>Forms: Team Builder</h4>
+            <p> 
+              The team builder App had me creating forms to collect and save new data to state. 
+              I used HTML form, input, and submit to create the forms. 
+              I then wrote functions that would save values to state when the event was triggered. 
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Using the useState hook to create and save values to state</li>
+              <li>Using HTML form, inputs, and submit to create forms</li>
+              <li>Creating functions that updated the state with the form values</li>
+              <li>*Creating an edit form that changes the values of an existing state</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/team-builder" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/User-Onboarding/" class="image" target='_blank'><img src="images/pic23.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>Formik: User Onboarding</h4>
+            <p> 
+              This user on-boarding App uses a React form library called Formik. 
+              I created a form with several input fields. I also added error messages incase a form was submitted with missing values. 
+              When the submit button is clicked, an API post request sends out the data and receives a response. 
+              After a response is received, the name of the user is added to the page to indicate that their information is now saved.
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>The use of the Formik library</li>
+              <li>Sending data to an API via a post request</li>
+              <li>Using setStatus in Formik to return API response data to the component</li>
+              <li>Using useEffect to update the state when the Status changes</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/User-Onboarding" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
           <a href="https://infallible-turing-b80f7e.netlify.app/" class="image" target='_blank'><img src="images/pic09.jpg" alt="" /></a>
           <div class="inner">
             <h4>Single Page Application</h4>
@@ -290,7 +318,7 @@
             </div>      
           </div>
         </article>
-        <article>
+        <article class="Lambda Team">
           <a href="https://practical-kilby-3f79e1.netlify.app/" class="image" target='_blank'><img src="images/pic16.jpg" alt="" /></a>
           <div class="inner">
             <h4>Immunization Tracker</h4>
@@ -325,7 +353,7 @@
             </div>      
           </div>
         </article>
-        <article>
+        <article class="Lambda">
           <a href="https://amazing-perlman-521a4e.netlify.app/" class="image" target='_blank'><img src="images/pic10.jpg" alt="" /></a>
           <div class="inner">
             <h4>React To Do List App</h4>
@@ -345,51 +373,51 @@
             </div>     
           </div>
         </article>
-        <article>
-            <a href="https://aaronw4.github.io/React-Github-User-Card/" class="image" target='_blank'><img src="images/pic17.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>React Lifecyles: Github User Card</h4>
-              <p> 
-                This is a React application that demonstrates React component lifecycles. 
-                During the mounting phase, an API call is made to collect user information. 
-                Upon clicking any of the buttons, the updating phase is initiated and the page is rerendered. 
-                Additional features include a search bar that will search Github user names and the Github Contribution Graph.
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>API call using fetch</li>
-                <li>ComponentDidMount and ComponentDidUpdate</li>
-                <li>React Class Components</li>
-                <li>*Search Bar</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/React-Github-User-Card" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
-          <article>
-              <a href="https://aaronw4.github.io/Sprint-Challenge-Advanced-React/" class="image" target='_blank'><img src="images/pic24.jpg" alt="" /></a>
-              <div class="inner">
-                <h4>React: Women's World Cup</h4>
-                <p> 
-                  This React app first collects data via an API call to a simple backend that I created. 
-                  Each player's information is then displayed as a list. I also created two custom hooks. 
-                  The first allows the user to change the display to dark mode and the second saves the users dark mode choice into local storage. 
-                  This project demonstrates:
-                </p>
-                <ul>
-                  <li>Fetching data from an API inside the ComponentDidMount hook</li>
-                  <li>Passing this data down to child components which display the information</li>
-                  <li>Creating custom hooks to implement a Dark Mode feature</li>
-                  <li>*Using ReactEcharts to create a graph of the player data</li>
-                </ul> 
-                <div class="repo">
-                  <a href="https://github.com/aaronw4/player-database" target="_blank">Backend Repo </a>
-                  <a href="https://github.com/aaronw4/Sprint-Challenge-Advanced-React" target="_blank"> Frontend Repo</a>   
-                </div>      
-              </div>
-            </article>
-        <article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/React-Github-User-Card/" class="image" target='_blank'><img src="images/pic17.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>React Lifecyles: Github User Card</h4>
+            <p> 
+              This is a React application that demonstrates React component lifecycles. 
+              During the mounting phase, an API call is made to collect user information. 
+              Upon clicking any of the buttons, the updating phase is initiated and the page is rerendered. 
+              Additional features include a search bar that will search Github user names and the Github Contribution Graph.
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>API call using fetch</li>
+              <li>ComponentDidMount and ComponentDidUpdate</li>
+              <li>React Class Components</li>
+              <li>*Search Bar</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/React-Github-User-Card" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/Sprint-Challenge-Advanced-React/" class="image" target='_blank'><img src="images/pic24.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>React: Women's World Cup</h4>
+            <p> 
+              This React app first collects data via an API call to a simple backend that I created. 
+              Each player's information is then displayed as a list. I also created two custom hooks. 
+              The first allows the user to change the display to dark mode and the second saves the users dark mode choice into local storage. 
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Fetching data from an API inside the ComponentDidMount hook</li>
+              <li>Passing this data down to child components which display the information</li>
+              <li>Creating custom hooks to implement a Dark Mode feature</li>
+              <li>*Using ReactEcharts to create a graph of the player data</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/player-database" target="_blank">Backend Repo </a>
+              <a href="https://github.com/aaronw4/Sprint-Challenge-Advanced-React" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Personal">
           <a href="https://modest-bell-e31264.netlify.app/" class="image" target='_blank'><img src="images/pic11.jpg" alt="" /></a>
           <div class="inner">
             <h4>React App: NFL Team and Player Information</h4>
@@ -409,30 +437,30 @@
             </div>     
           </div>
         </article>
-        <article>
-            <a href="https://aaronw4.github.io/Car-Sales/" class="image" target='_blank'><img src="images/pic18.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>Redux: Car Sales</h4>
-              <p> 
-                This App displays a component with a car for sale's basic information on the left. 
-                On the right was a features component where a user can add features to the car. 
-                My task was to implement a global state by using Redux. 
-                I also created actions and reducers to change the state, which rerenders the page. 
-                The user is able to add and remove features with the price updating with each change.
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>Using a Provider to create a global store</li>
-                <li>Writine Redux Actions</li>
-                <li>Creating the Initial State in the Reducer</li>
-                <li>Writing actions to make changes to the State</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/Car-Sales" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
-        <article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/Car-Sales/" class="image" target='_blank'><img src="images/pic18.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>Redux: Car Sales</h4>
+            <p> 
+              This App displays a component with a car for sale's basic information on the left. 
+              On the right was a features component where a user can add features to the car. 
+              My task was to implement a global state by using Redux. 
+              I also created actions and reducers to change the state, which rerenders the page. 
+              The user is able to add and remove features with the price updating with each change.
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Using a Provider to create a global store</li>
+              <li>Writine Redux Actions</li>
+              <li>Creating the Initial State in the Reducer</li>
+              <li>Writing actions to make changes to the State</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/Car-Sales" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
           <a href="https://app-d6sxj8uq9.now.sh/" class="image" target='_blank'><img src="images/pic12.jpg" alt="" /></a>
           <div class="inner">
             <h4>React-Redux App: Dogs</h4>
@@ -450,52 +478,52 @@
             </div>     
           </div>
         </article>
-        <article>
-            <a href="https://aaronw4.github.io/react-shopping-cart/" class="image" target='_blank'><img src="images/pic19.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>Context API: Shopping Cart</h4>
-              <p> 
-                This is a single page App with different routes that uses Context API to keep a global state. 
-                Two different contexts are created. The first context is for the product information and the second is for the shopping cart. 
-                The product page and the shopping cart page are given different components that are given different routes.
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>Using BrowserRouter and then creating different Routes</li>
-                <li>Using NavLinks to go back and forth between the pages</li>
-                <li>Created Contexts</li>
-                <li>Use Provider component to provide data to components</li>
-                <li>Used UseContext to import context data into components</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/react-shopping-cart" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
-          <article>
-              <a href="https://aaronw4.github.io/Sprint-Challenge-State-Management-Smurfs/" class="image" target='_blank'><img src="images/pic25.jpg" alt="" /></a>
-              <div class="inner">
-                <h4>Redux: Smurfs</h4>
-                <p> 
-                  Here I am using Redux as my state management system. 
-                  I created different actions to collect, submit, and remove data from the backend. 
-                  I used Axios to make my get, post, and delete calls to the backend. 
-                  I used useState to save data that was submitted on the pages form inputs before posting it to the backend. 
-                  This project demonstrates:
-                </p>
-                <ul>
-                  <li>Using Redux to manage the state</li>
-                  <li>Sending get, post, and delete requests</li>
-                  <li>Using a form to collect data on a new smurf</li>
-                  <li>*Creating a button to delete smurf data</li>
-                </ul> 
-                <div class="repo">
-                  <a href="https://github.com/aaronw4/smurfs-database" target="_blank">Backend Repo </a>
-                  <a href="https://github.com/aaronw4/Sprint-Challenge-State-Management-Smurfs" target="_blank"> Frontend Repo</a>   
-                </div>      
-              </div>
-            </article>
-        <article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/react-shopping-cart/" class="image" target='_blank'><img src="images/pic19.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>Context API: Shopping Cart</h4>
+            <p> 
+              This is a single page App with different routes that uses Context API to keep a global state. 
+              Two different contexts are created. The first context is for the product information and the second is for the shopping cart. 
+              The product page and the shopping cart page are given different components that are given different routes.
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Using BrowserRouter and then creating different Routes</li>
+              <li>Using NavLinks to go back and forth between the pages</li>
+              <li>Created Contexts</li>
+              <li>Use Provider component to provide data to components</li>
+              <li>Used UseContext to import context data into components</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/react-shopping-cart" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
+          <a href="https://aaronw4.github.io/Sprint-Challenge-State-Management-Smurfs/" class="image" target='_blank'><img src="images/pic25.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>Redux: Smurfs</h4>
+            <p> 
+              Here I am using Redux as my state management system. 
+              I created different actions to collect, submit, and remove data from the backend. 
+              I used Axios to make my get, post, and delete calls to the backend. 
+              I used useState to save data that was submitted on the pages form inputs before posting it to the backend. 
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Using Redux to manage the state</li>
+              <li>Sending get, post, and delete requests</li>
+              <li>Using a form to collect data on a new smurf</li>
+              <li>*Creating a button to delete smurf data</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/smurfs-database" target="_blank">Backend Repo </a>
+              <a href="https://github.com/aaronw4/Sprint-Challenge-State-Management-Smurfs" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda">
           <a href="https://friendly-jepsen-9cd70d.netlify.app" class="image" target='_blank'><img src="images/pic13.jpg" alt="" /></a>
           <div class="inner">
             <h4>Authentication Friends List: React App</h4>
@@ -517,32 +545,32 @@
             </div>     
           </div>
         </article>
-        <article>
-            <a href="https://inspiring-saha-18a243.netlify.app/" class="image" target='_blank'><img src="images/pic26.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>Put Requests: Movies</h4>
-              <p> 
-                This app demonstrates doing a push request to update a database. 
-                I had to create a backend in order to post this on Netlify. 
-                The App makes a get request to the backend then displays the movie data. 
-                Different routes are used so that the user can focus on one movie or edit a movie listing. 
-                If the user goes to a movie page, they can then add it to their saved list. 
-                The can click edit which goes to another page with a form for editing. 
-                Once submitted, a put request is sent and the backend is updated.
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>Performing Get requests and then displaying retrieved data</li>
-                <li>Using routes to direct the user to different displays</li>
-                <li>Using Put request to change the backend database</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/movies-database" target="_blank">Backend Repo </a>
-                <a href="https://github.com/aaronw4/HTTP-Movies-Assignment" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
-        <article>
+        <article class="Lambda">
+          <a href="https://inspiring-saha-18a243.netlify.app/" class="image" target='_blank'><img src="images/pic26.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>Put Requests: Movies</h4>
+            <p> 
+              This app demonstrates doing a push request to update a database. 
+              I had to create a backend in order to post this on Netlify. 
+              The App makes a get request to the backend then displays the movie data. 
+              Different routes are used so that the user can focus on one movie or edit a movie listing. 
+              If the user goes to a movie page, they can then add it to their saved list. 
+              The can click edit which goes to another page with a form for editing. 
+              Once submitted, a put request is sent and the backend is updated.
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Performing Get requests and then displaying retrieved data</li>
+              <li>Using routes to direct the user to different displays</li>
+              <li>Using Put request to change the backend database</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/movies-database" target="_blank">Backend Repo </a>
+              <a href="https://github.com/aaronw4/HTTP-Movies-Assignment" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
+        <article class="Lambda Team">
           <a href="https://priceless-feynman-fef995.netlify.app" class="image" target='_blank'><img src="images/pic14.jpg" alt="" /></a>
           <div class="inner">
             <h4>Development Desk Help Ticket</h4>
@@ -565,7 +593,7 @@
             </div>    
           </div>
         </article>
-        <article>
+        <article class="Lambda">
           <a href="https://eloquent-lewin-c8d293.netlify.app/" class="image" target='_blank'><img src="images/pic15.jpg" alt="" /></a>
           <div class="inner">
             <h4>Node API Project: Lord of the Rings</h4>
@@ -586,7 +614,7 @@
             </div>  
           </div>
         </article>
-        <article>
+        <article class="Personal">
           <a href="https://aaronw4.github.io/BOMG-redesign/index.html" class="image" target='_blank'><img src="images/pic28.jpg" alt="" /></a>
           <div class="inner">
             <h4>Berkeley Ophthalmology Medical Group</h4>
@@ -612,56 +640,56 @@
             </div>      
           </div>
         </article>
-        <article id='Get2It'>
-            <a href="https://60825c0d20e072000756b106--romantic-noether-754d75.netlify.app/login" class="image" target='_blank'><img src="images/pic27.jpg" alt="" /></a>
-            <div class="inner">
-              <h4>Get2It</h4>
-              <p> 
-                Our final team project, which lasted for several weeks. We had a team of six working on this task organizer 
-                that included a project manager and two IOS developers. 
-                The rest of us were web developers that were continuing a project that was started by another 
-                team. One of my partners worked on the front-end exclusively while the other worked on the back-end exclusively. 
-                Most of my work was also on the front-end but I also helped out on the back-end. As a team, we created a Notion 
-                document for our 
-                <a href="https://lambdaxarchives.notion.site/Get2It-f99d691af6ce4731b39adc459f35eba9" target="_blank">product board. </a>
-                Part of this work included creating 
-                <a href="https://lambdaxarchives.notion.site/f6289b7ccdf846118fb41efab856b305?v=9d08751813d14eef9f5978b994087ee0" target="_blank">release canvases.</a> 
-                We created versions 1.1 - 1.3 and completed 1.1 and 1.2. 
-                I was assigned to work on:
-              </p>
-              <ul>
-                <li>Show/hide password feature on registration and log in pages.</li>
-                <li>Fixing of bugs such as task list rendering</li>
-                <li>Adding categories to tasks</li>
-                <li>Filter tasks by date</li>
-                <li>Testing</li>
-              </ul> 
-              <p>
-                <br/>
-                On our <a href="JavaScript:newPopup('images/Trello-get2it.jpg');">Trello Board</a> 
-                <a href="JavaScript:newPopup('images/Trello-get2it.jpg');">(page 2)</a>, you can see that I also 
-                did work on the introduction page and the footer.
-                <br/>
-                <br/>
-                To login, use the email address is bob1@gmail.com and the password is 1234test.
-                <br/>
-                <br/>
-                This project demonstrates:
-              </p>
-              <ul>
-                <li>Working with a project team to realease an App.</li>
-                <li>Adapting forms, post request, and put request to handle categories</li>
-                <li>Modified backend to store categories and connect them to tasks</li>
-                <li>Used filters to display tasks by date or by category</li>
-                <li>Created Redux testing utility to handle front-end testing</li>
-                <li>Wrote all front-end tests using Jest</li>
-              </ul> 
-              <div class="repo">
-                <a href="https://github.com/aaronw4/get2it-be" target="_blank">Backend Repo </a>
-                <a href="https://github.com/aaronw4/get2it-fe" target="_blank"> Frontend Repo</a>   
-              </div>      
-            </div>
-          </article>
+        <article id='Get2It' class="Lambda Team">
+          <a href="https://60825c0d20e072000756b106--romantic-noether-754d75.netlify.app/login" class="image" target='_blank'><img src="images/pic27.jpg" alt="" /></a>
+          <div class="inner">
+            <h4>Get2It</h4>
+            <p> 
+              Our final team project, which lasted for several weeks. We had a team of six working on this task organizer 
+              that included a project manager and two IOS developers. 
+              The rest of us were web developers that were continuing a project that was started by another 
+              team. One of my partners worked on the front-end exclusively while the other worked on the back-end exclusively. 
+              Most of my work was also on the front-end but I also helped out on the back-end. As a team, we created a Notion 
+              document for our 
+              <a href="https://lambdaxarchives.notion.site/Get2It-f99d691af6ce4731b39adc459f35eba9" target="_blank">product board. </a>
+              Part of this work included creating 
+              <a href="https://lambdaxarchives.notion.site/f6289b7ccdf846118fb41efab856b305?v=9d08751813d14eef9f5978b994087ee0" target="_blank">release canvases.</a> 
+              We created versions 1.1 - 1.3 and completed 1.1 and 1.2. 
+              I was assigned to work on:
+            </p>
+            <ul>
+              <li>Show/hide password feature on registration and log in pages.</li>
+              <li>Fixing of bugs such as task list rendering</li>
+              <li>Adding categories to tasks</li>
+              <li>Filter tasks by date</li>
+              <li>Testing</li>
+            </ul> 
+            <p>
+              <br/>
+              On our <a href="JavaScript:newPopup('images/Trello-get2it.jpg');">Trello Board</a> 
+              <a href="JavaScript:newPopup('images/Trello-get2it.jpg');">(page 2)</a>, you can see that I also 
+              did work on the introduction page and the footer.
+              <br/>
+              <br/>
+              To login, use the email address is bob1@gmail.com and the password is 1234test.
+              <br/>
+              <br/>
+              This project demonstrates:
+            </p>
+            <ul>
+              <li>Working with a project team to realease an App.</li>
+              <li>Adapting forms, post request, and put request to handle categories</li>
+              <li>Modified backend to store categories and connect them to tasks</li>
+              <li>Used filters to display tasks by date or by category</li>
+              <li>Created Redux testing utility to handle front-end testing</li>
+              <li>Wrote all front-end tests using Jest</li>
+            </ul> 
+            <div class="repo">
+              <a href="https://github.com/aaronw4/get2it-be" target="_blank">Backend Repo </a>
+              <a href="https://github.com/aaronw4/get2it-fe" target="_blank"> Frontend Repo</a>   
+            </div>      
+          </div>
+        </article>
       </div>
     </div>
   </section>
