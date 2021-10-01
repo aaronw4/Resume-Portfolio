@@ -15,27 +15,23 @@
 </head>
 <script>
 $('.buttonCont').ready(function() {
-  $('#All').click(function() {
-    $('.Lambda').show();
-    $('.Personal').show();
-    $('.Team').show();
-  });
-  $('#Lambda').click(function() {
-    $('.Personal').hide();
-    $('.Team').hide();
-    $('.Lambda').show();
-  });
-  $('#Personal').click(function() {
-    $('.Lambda').hide();
-    $('.Team').hide();
-    $('.Personal').show();
-  });
-  $('#Team').click(function() {
-    $('.Lambda').hide();
-    $('.Personal').hide();
-    $('.Team').show();
-  });
+  $('#All').click(function() {$('.Lambda').show(); $('.Personal').show(); $('.Team').show();});
+  $('#Lambda').click(function() {$('.Personal').hide(); $('.Team').hide(); $('.Lambda').show();});
+  $('#Personal').click(function() {$('.Lambda').hide(); $('.Team').hide(); $('.Personal').show();});
+  $('#Team').click(function() {$('.Lambda').hide(); $('.Personal').hide(); $('.Team').show();});
+  $('#BE').click(function() {$('.FE').hide(); $('.BE').show();});
 })
+// $(function() {
+//   $('select').change(function() {
+//     var id = $(this).val();
+//     console.log(id);
+//     if (id === '1') {
+//       $('.FE').show(); $('.BE').show()
+//     } else if (id === '3') {
+//       $('.FE').hide(); $('.BE').show()
+//     }
+//   })
+// })
 </script>
 <body>
   <nav class="topNav">
@@ -58,9 +54,14 @@ $('.buttonCont').ready(function() {
         <button id='Lambda' type="button" class="btn btn-secondary btn-lg">Lambda Projects</button>
         <button id='Personal' type="button" class="btn btn-secondary btn-lg">Personal Projects</button>
         <button id='Team' type="button" class="btn btn-secondary btn-lg">Team Projects</button>
+        <button id='BE' type="button" class="btn btn-secondary btn-lg">Back-End Projects</button>
+        <!-- <select id='select'>
+          <option value='1'>Show All</option>
+          <option value="3">Show Back-End</option>
+        </select> -->
       </div>
       <div class="features">
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/responsive-web-design-I/" class="image" target='_blank'><img src="images/pic01.png" alt="" /></a>
           <div class="inner">
             <h4>Responsive Design Web Page</h4>
@@ -80,7 +81,7 @@ $('.buttonCont').ready(function() {
             </div> 
           </div>
         </article>
-        <article class="Lambda Team">
+        <article class="Lambda Team FE">
           <a href="https://aaronw4.github.io/WebUI/" class="image" target='_blank'><img src="images/pic02.png" alt="" /></a>
           <div class="inner">
             <h4>Team Built Landing Page</h4>
@@ -100,7 +101,7 @@ $('.buttonCont').ready(function() {
             </div> 
           </div>
         </article>
-        <article class="Lambda">
+        <!-- <article class="Lambda">
           <a href="https://github.com/aaronw4/Sprint-Challenge--JavaScript/tree/Aaron-Williams/challenges" class="image" target='_blank'><img src="images/pic03.png" alt="" /></a>
           <div class="inner">
             <h4>JavaScript Fundamentals</h4>
@@ -115,8 +116,8 @@ $('.buttonCont').ready(function() {
               <li>Converting prototypes into classes.</li>
             </ul>             
           </div>
-        </article>
-        <article class="Lambda">
+        </article> -->
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/Newsfeed-Components/" class="image" target='_blank'><img src="images/pic04.png" alt="" /></a>
           <div class="inner">
             <h4>DOM, Components, and Event Listeners</h4>
@@ -135,7 +136,7 @@ $('.buttonCont').ready(function() {
             </div>              
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/Sprint-Challenge-Applied-Javascript/" class="image" target='_blank'><img src="images/pic05.png" alt="" /></a>
           <div class="inner">
             <h4>Using Promises and Creating Components</h4>
@@ -155,7 +156,7 @@ $('.buttonCont').ready(function() {
             </div>                
           </div>
         </article> 
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://sharp-keller-67dc92.netlify.app/" class="image" target='_blank'><img src="images/pic07.jpg" alt="" /></a>
           <div class="inner">
             <h4>React-UI-Components: Lambda Calculator</h4>
@@ -177,7 +178,7 @@ $('.buttonCont').ready(function() {
             </div>            
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/react-american-football-scoreboard/" class="image" target='_blank'><img src="images/pic20.jpg" alt="" /></a>
           <div class="inner">
             <h4>React: American Football Scoreboard</h4>
@@ -215,7 +216,7 @@ $('.buttonCont').ready(function() {
             </div>            
           </div>
         </article> -->
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/Sprint-Challenge-React-Wars/" class="image" target='_blank'><img src="images/pic21.jpg" alt="" /></a>
           <div class="inner">
             <h4>React: Star Wars</h4>
@@ -242,7 +243,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://jovial-clarke-6b48a4.netlify.app/" class="image" target='_blank'><img src="images/pic08.jpg" alt="" /></a>
           <div class="inner">
             <h4>*React Router Apple Nav</h4>
@@ -260,7 +261,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/team-builder/" class="image" target='_blank'><img src="images/pic22.jpg" alt="" /></a>
           <div class="inner">
             <h4>Forms: Team Builder</h4>
@@ -281,7 +282,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/User-Onboarding/" class="image" target='_blank'><img src="images/pic23.jpg" alt="" /></a>
           <div class="inner">
             <h4>Formik: User Onboarding</h4>
@@ -303,7 +304,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://infallible-turing-b80f7e.netlify.app/" class="image" target='_blank'><img src="images/pic09.jpg" alt="" /></a>
           <div class="inner">
             <h4>Single Page Application</h4>
@@ -323,7 +324,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda Team">
+        <article class="Lambda Team FE">
           <a href="https://practical-kilby-3f79e1.netlify.app/" class="image" target='_blank'><img src="images/pic16.jpg" alt="" /></a>
           <div class="inner">
             <h4>Immunization Tracker</h4>
@@ -358,7 +359,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://amazing-perlman-521a4e.netlify.app/" class="image" target='_blank'><img src="images/pic10.jpg" alt="" /></a>
           <div class="inner">
             <h4>React To Do List App</h4>
@@ -378,7 +379,7 @@ $('.buttonCont').ready(function() {
             </div>     
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/React-Github-User-Card/" class="image" target='_blank'><img src="images/pic17.jpg" alt="" /></a>
           <div class="inner">
             <h4>React Lifecyles: Github User Card</h4>
@@ -400,7 +401,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE BE">
           <a href="https://aaronw4.github.io/Sprint-Challenge-Advanced-React/" class="image" target='_blank'><img src="images/pic24.jpg" alt="" /></a>
           <div class="inner">
             <h4>React: Women's World Cup</h4>
@@ -422,7 +423,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Personal">
+        <article class="Personal FE">
           <a href="https://modest-bell-e31264.netlify.app/" class="image" target='_blank'><img src="images/pic11.jpg" alt="" /></a>
           <div class="inner">
             <h4>React App: NFL Team and Player Information</h4>
@@ -442,7 +443,7 @@ $('.buttonCont').ready(function() {
             </div>     
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/Car-Sales/" class="image" target='_blank'><img src="images/pic18.jpg" alt="" /></a>
           <div class="inner">
             <h4>Redux: Car Sales</h4>
@@ -465,7 +466,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://app-d6sxj8uq9.now.sh/" class="image" target='_blank'><img src="images/pic12.jpg" alt="" /></a>
           <div class="inner">
             <h4>React-Redux App: Dogs</h4>
@@ -483,7 +484,7 @@ $('.buttonCont').ready(function() {
             </div>     
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE">
           <a href="https://aaronw4.github.io/react-shopping-cart/" class="image" target='_blank'><img src="images/pic19.jpg" alt="" /></a>
           <div class="inner">
             <h4>Context API: Shopping Cart</h4>
@@ -505,7 +506,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE BE">
           <a href="https://aaronw4.github.io/Sprint-Challenge-State-Management-Smurfs/" class="image" target='_blank'><img src="images/pic25.jpg" alt="" /></a>
           <div class="inner">
             <h4>Redux: Smurfs</h4>
@@ -528,7 +529,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE BE">
           <a href="https://friendly-jepsen-9cd70d.netlify.app" class="image" target='_blank'><img src="images/pic13.jpg" alt="" /></a>
           <div class="inner">
             <h4>Authentication Friends List: React App</h4>
@@ -550,7 +551,7 @@ $('.buttonCont').ready(function() {
             </div>     
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE BE">
           <a href="https://inspiring-saha-18a243.netlify.app/" class="image" target='_blank'><img src="images/pic26.jpg" alt="" /></a>
           <div class="inner">
             <h4>Put Requests: Movies</h4>
@@ -575,7 +576,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Lambda Team">
+        <article class="Lambda Team FE">
           <a href="https://priceless-feynman-fef995.netlify.app" class="image" target='_blank'><img src="images/pic14.jpg" alt="" /></a>
           <div class="inner">
             <h4>Development Desk Help Ticket</h4>
@@ -598,7 +599,7 @@ $('.buttonCont').ready(function() {
             </div>    
           </div>
         </article>
-        <article class="Lambda">
+        <article class="Lambda FE BE">
           <a href="https://eloquent-lewin-c8d293.netlify.app/" class="image" target='_blank'><img src="images/pic15.jpg" alt="" /></a>
           <div class="inner">
             <h4>Node API Project: Lord of the Rings</h4>
@@ -619,7 +620,7 @@ $('.buttonCont').ready(function() {
             </div>  
           </div>
         </article>
-        <article class="Personal">
+        <article class="Personal FE">
           <a href="https://aaronw4.github.io/BOMG-redesign/index.html" class="image" target='_blank'><img src="images/pic28.jpg" alt="" /></a>
           <div class="inner">
             <h4>Berkeley Ophthalmology Medical Group</h4>
@@ -645,7 +646,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article id='Get2It' class="Lambda Team">
+        <article id='Get2It' class="Lambda Team FE BE">
           <a href="https://60825c0d20e072000756b106--romantic-noether-754d75.netlify.app/login" class="image" target='_blank'><img src="images/pic27.jpg" alt="" /></a>
           <div class="inner">
             <h4>Get2It</h4>
@@ -695,7 +696,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Personal">
+        <article class="Personal FE">
           <a href="https://aaronw4.github.io/Resume-Portfolio/index.html" class="image" target='_blank'><img src="images/pic29.jpg" alt="" id='hpImage'/></a>
           <div class="inner">
             <h4>Resume/Portfolio</h4>
@@ -715,7 +716,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Personal">
+        <article class="Personal FE">
           <a href="https://aaronw4.github.io/Spacestagram/" class="image" target='_blank'><img src="images/pic31.jpg" alt="" /></a>
           <div class="inner">
             <h4>Spacestagram</h4>
@@ -738,7 +739,7 @@ $('.buttonCont').ready(function() {
             </div>      
           </div>
         </article>
-        <article class="Personal">
+        <article class="Personal FE BE">
           <a href="https://aaronw4.github.io/NBA-back-testing/" class="image" target='_blank'><img src="images/pic30.jpg" alt="" /></a>
           <div class="inner">
             <h4>NBA Back Testing</h4>
