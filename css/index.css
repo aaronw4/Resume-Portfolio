@@ -555,6 +555,12 @@ input:checked + label {
   margin: 10px;
   font-size: 2rem;
 }
+select {
+  width: 140px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 1.6rem;
+}
 @media (max-width: 1024px) {
   .container {
     width: 100%;
@@ -632,6 +638,9 @@ input:checked + label {
   font-size: 1.8rem;
   list-style-type: disc;
   line-height: 1.2;
+}
+b {
+  font-weight: bold;
 }
 .repo {
   font-size: 1.8rem;
